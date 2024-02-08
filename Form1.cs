@@ -12,7 +12,11 @@ namespace DemoPractice1._2
         {
             InitializeComponent();
             bind_data("select * FROM products ORDER BY id ASC");
+            Form2 form2 = new Form2();
+            labellogin.Text = data.login;
         }
+
+
 
         NpgsqlConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;Username=postgres;Password=123456;Database=products;");
 

@@ -35,13 +35,14 @@
             textBox1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            labellogin = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 72);
+            dataGridView1.Location = new Point(12, 109);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.Size = new Size(501, 407);
@@ -49,7 +50,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(143, 29);
+            button1.Location = new Point(144, 68);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -63,7 +64,7 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "ASC", "DESC" });
-            comboBox1.Location = new Point(236, 29);
+            comboBox1.Location = new Point(236, 68);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 2;
@@ -74,7 +75,7 @@
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "MIN", "MAX" });
-            comboBox2.Location = new Point(392, 29);
+            comboBox2.Location = new Point(392, 68);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(121, 23);
             comboBox2.TabIndex = 3;
@@ -82,7 +83,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 30);
+            textBox1.Location = new Point(12, 69);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(119, 23);
             textBox1.TabIndex = 4;
@@ -90,7 +91,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(236, 9);
+            label1.Location = new Point(236, 50);
             label1.Name = "label1";
             label1.Size = new Size(34, 15);
             label1.TabIndex = 5;
@@ -99,17 +100,26 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(392, 7);
+            label2.Location = new Point(392, 50);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 6;
             label2.Text = "FILTER";
             // 
+            // labellogin
+            // 
+            labellogin.AutoSize = true;
+            labellogin.Location = new Point(337, 9);
+            labellogin.Name = "labellogin";
+            labellogin.Size = new Size(0, 15);
+            labellogin.TabIndex = 7;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(525, 491);
+            ClientSize = new Size(525, 528);
+            Controls.Add(labellogin);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox1);
@@ -134,5 +144,6 @@
         private TextBox textBox1;
         private Label label1;
         private Label label2;
+        private Label labellogin;
     }
 }

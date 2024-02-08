@@ -19,7 +19,6 @@ namespace DemoPractice1._2
         private DataSet ds = new DataSet();
         private DataTable dt = new DataTable();
 
-
         public Form2()
         {
             InitializeComponent();
@@ -41,6 +40,8 @@ namespace DemoPractice1._2
                 da.Fill(ds);
                 dt = ds.Tables[0];
 
+                
+                data.login = dt.Rows[0][1].ToString();
                 if (count != 3 && dt != null && dt.Rows[0][2].ToString() == textBox2.Text && dt.Rows[0][1].ToString() == textBox1.Text)
                 {
                     this.Hide();
